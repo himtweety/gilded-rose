@@ -40,13 +40,9 @@
                             <a href="/buy-now/{{$product->id}}" class="btn btn-primary">Buy Product</a>
                             @endif
                             @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
+                                <a class="btn btn-primary" href="{{ route('login') }}">{{ __('Login') }}</a>
                             @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
+                                <a class="btn btn-info" href="{{ route('register') }}">{{ __('Register') }}</a>
                             @endif
                             @endauth
                         </div>
